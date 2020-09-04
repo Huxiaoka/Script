@@ -11,7 +11,6 @@
 
 **********建议设置每小时运行一次**********
 
-圈X
 [mitm]
 hostname= www.baimaa.com
 
