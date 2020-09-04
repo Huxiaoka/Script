@@ -16,13 +16,13 @@
 hostname= www.baimaa.com
 
 surge:
-slw打卡 = type=http-request,pattern=^ https:\/\/www\.baimaa\.com\/*,requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Huxiaoka/Script/master/yydk.js
+音乐打卡小程序 = type=http-request,pattern=^ https:\/\/www\.baimaa\.com\/*,requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Huxiaoka/Script/master/yydk.js
 
 圈x:
 https:\/\/www\.baimaa\.com\/* url script-request-header https://raw.githubusercontent.com/Huxiaoka/Script/master/yydk.js
 
 loon:
-http-request ^ https:\/\/www\.baimaa\.com\/* script-path= https://raw.githubusercontent.com/Huxiaoka/Script/master/yydk.js, requires-body=true, timeout=10, tag=打卡
+http-request ^ https:\/\/www\.baimaa\.com\/* script-path= https://raw.githubusercontent.com/Huxiaoka/Script/master/yydk.js, requires-body=true, timeout=10, tag=音乐打卡小程序
 
 [task local]
 0 */1 * * * https://raw.githubusercontent.com/Huxiaoka/Script/master/yydk.js, tag=音乐打卡小程序
@@ -31,9 +31,7 @@ http-request ^ https:\/\/www\.baimaa\.com\/* script-path= https://raw.githubuser
 
 */
 
-
 //正文
-
 
 const sy = init()//声明必须
 const notifyInterval = 1; //通知开为1，常关为0
