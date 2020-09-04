@@ -11,8 +11,6 @@
 
 **********建议设置每小时运行一次**********
 
-[mitm]
-hostname= www.baimaa.com
 
 surge:
 音乐打卡小程序 = type=http-request,pattern=^ https:\/\/www\.baimaa\.com\/*,requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Huxiaoka/Script/master/yydk.js
@@ -25,6 +23,9 @@ http-request ^ https:\/\/www\.baimaa\.com\/* script-path= https://raw.githubuser
 
 [task local]
 0 */1 * * * https://raw.githubusercontent.com/Huxiaoka/Script/master/yydk.js, tag=音乐打卡小程序
+
+[mitm]
+hostname= www.baimaa.com
 
 三、添加重写，然后打开以下对应程序，获取ck后注释掉
 
