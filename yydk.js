@@ -1,29 +1,33 @@
 /*
 说明：
-一，将hostname复制粘贴进配置文件
-二，将重写复制到 rewrite_local 下，进对应小程序获取ck，
-三，小程序名字叫 音乐line
+一、将hostname复制粘贴进配置文件
+二、将重写复制到 rewrite_local 下，进对应小程序获取ck，
+三、小程序名字叫 音乐line
 
 功能如下：
 1.每日打卡，设置了开关，完成任务不再打卡
 2.打卡币统计，
 3.现金统计，自动提现
-***建议设置每小时运行一次 
+
+**********建议设置每小时运行一次**********
 
 圈X
+[mitm]
+hostname= www.baimaa.com
 
-hostname= www.baimaa.com,
+surge:
+slw打卡 = type=http-request,pattern=^ https:\/\/www\.baimaa\.com\/*,requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Huxiaoka/Script/master/yydk.js
 
-surge:本地
-slw打卡 = type=http-request,pattern=^ https:\/\/www\.baimaa\.com\/*,requires-body=1,max-size=0,script-path= yydk.js
+圈x:
+https:\/\/www\.baimaa\.com\/* url script-request-header https://raw.githubusercontent.com/Huxiaoka/Script/master/yydk.js
 
-圈x:本地
-https:\/\/www\.baimaa\.com\/* url script-request-header yydk.js
+loon:
+http-request ^ https:\/\/www\.baimaa\.com\/* script-path= https://raw.githubusercontent.com/Huxiaoka/Script/master/yydk.js, requires-body=true, timeout=10, tag=打卡
 
-loon:本地
-http-request ^ https:\/\/www\.baimaa\.com\/* script-path= yydk.js, requires-body=true, timeout=10, tag=打卡
+[task local]
+0 */1 * * * https://raw.githubusercontent.com/Huxiaoka/Script/master/yydk.js, tag=音乐打卡小程序
 
-三，添加重写，然后打开以下对应程序，获取ck后注释掉
+三、添加重写，然后打开以下对应程序，获取ck后注释掉
 
 */
 
