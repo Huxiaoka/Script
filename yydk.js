@@ -22,7 +22,7 @@ loon:
 http-request ^ https:\/\/www\.baimaa\.com\/* script-path= https://raw.githubusercontent.com/Huxiaoka/Script/master/yydk.js, requires-body=true, timeout=10, tag=音乐打卡小程序
 
 [task local]
-0 */1 * * * https://raw.githubusercontent.com/Huxiaoka/Script/master/yydk.js, tag=音乐打卡小程序
+0 1/15 0-23 * * ? https://raw.githubusercontent.com/Huxiaoka/Script/master/yydk.js, tag=音乐打卡小程序
 
 [mitm]
 hostname= www.baimaa.com
