@@ -2,12 +2,12 @@
 /*
 
 #QX 远程订阅微信签到打卡小程序App签到
-https:\/\/(www\.baimaa\.com|www\.2xtj7\.cn|www\.hnmiaosu\.cc|ph0001\.hezyq\.com|wq\.02gk\.com|dk\.ne72\.com)\/app\/index\.php? url script-request-header https://raw.githubusercontent.com/wangdelu2020/hongliyu/master/wxdaka.js
+https:\/\/(www\.baimaa\.com|www\.2xtj7\.cn|www\.hnmiaosu\.cc|ph0001\.hezyq\.com|wq\.02gk\.com|dk\.ne72\.com)\/app\/index\.php? url script-request-header https://raw.githubusercontent.com/Huxiaoka/Script/master/wxda.js
 
 
 
 #定时(远程订阅)
-0 30 0-24 * * ? https://raw.githubusercontent.com/wangdelu2020/hongliyu/master/wxdaka.js, tag=微信小程序打卡签到, enabled=false
+0 30 0-24 * * ? https://raw.githubusercontent.com/Huxiaoka/Script/master/wxda.js, tag=微信小程序打卡签到, enabled=false
 
 mit=www.2xtj7.cn,www.baimaa.com,www.hnmiaosu.cc,ph0001.hezyq.com,wq.02gk.com,dk.ne72.com
 
@@ -15,7 +15,7 @@ mit=www.2xtj7.cn,www.baimaa.com,www.hnmiaosu.cc,ph0001.hezyq.com,wq.02gk.com,dk.
 
 #loon 微信签到打卡小程序App签到
 
-http-request https:\/\/(www\.baimaa\.com|www\.2xtj7\.cn|www\.hnmiaosu\.cc|ph0001\.hezyq\.com|wq\.02gk\.com|dk\.ne72\.com)\/app\/index\.php? script-path=https://raw.githubusercontent.com/wangdelu2020/hongliyu/master/wxdaka.js, requires-header=true, timeout=30, tag=微信打卡小程序
+http-request https:\/\/(www\.baimaa\.com|www\.2xtj7\.cn|www\.hnmiaosu\.cc|ph0001\.hezyq\.com|wq\.02gk\.com|dk\.ne72\.com)\/app\/index\.php? script-path=https://raw.githubusercontent.com/Huxiaoka/Script/master/wxda.js, requires-header=true, timeout=30, tag=微信打卡小程序
 
 mit=www.2xtj7.cn,www.baimaa.com,www.hnmiaosu.cc,ph0001.hezyq.com,wq.02gk.com,dk.ne72.com
 
