@@ -45,7 +45,7 @@ http-request ^ https:\/\/wq\.02gk\.com\/* script-path= tldkdk.js, requires-body=
 const sy = init()//声明必须
 const notifyInterval = 1; //通知开为1，常关为0
 const logs = 0; // 日志开关
-const jsname = '微打卡赚钱打卡'
+const jsname = '陀螺打卡'
 const jbid =1
 const sb='失败,请获取ck'
 
