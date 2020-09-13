@@ -22,14 +22,14 @@
 
 
 surge:本地
-微打卡赚钱打卡 = type=http-request,pattern=^ https:\/\/wq\.02gk\.com\/*,requires-body=1,max-size=0,script-path= tldkdk.js
+陀螺打卡小程序 = type=http-request,pattern=^ https:\/\/wq\.02gk\.com\/*,requires-body=1,max-size=0,script-path= tldkdk.js
 
 
 圈x:本地
-https:\/\/wq\.02gk\.com\/* url script-request-header tldkdk.js, tag=微打卡赚钱打卡
+https:\/\/wq\.02gk\.com\/* url script-request-header tldkdk.js, tag=陀螺打卡小程序
 
 loon:本地
-http-request ^ https:\/\/wq\.02gk\.com\/* script-path= tldkdk.js, requires-body=true, timeout=10, tag=微打卡赚钱打卡
+http-request ^ https:\/\/wq\.02gk\.com\/* script-path= tldkdk.js, requires-body=true, timeout=10, tag=陀螺打卡小程序
 
 
 
