@@ -4,7 +4,7 @@
 手动替换（从上到下）:
 dk.ne72.com
 早起打卡
-cs = 5
+cs = 50
 xj = 1
 zqdkdkurl
 i=2
@@ -60,7 +60,7 @@ const jsname = '早起打卡'
 const jbid =1
 const sb='失败,请获取ck'
 
-const cs = 5;//小程序打卡次数
+const cs = 50;//小程序打卡次数
 const xj = 1;//提现标准
 var tz=''
 
