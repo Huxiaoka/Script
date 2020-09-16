@@ -7,9 +7,9 @@ www\.hnmiaosu\.cc
 天天打卡赚赚
 cs = 9
 xj = 1
-ttdkzzkurl
+ttdkzzurl
 i=57
-ttdkzzk
+ttdkzz
 
 
 一，将hostname复制粘贴进配置文件
@@ -32,17 +32,17 @@ ttdkzzk
 
 
 surge:本地
-天天打卡赚赚小程序 = type=http-request,pattern=^ https:\/\/www\.hnmiaosu\.cc\/*,requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Huxiaoka/Script/master/ttdkzzk.js
+天天打卡赚赚小程序 = type=http-request,pattern=^ https:\/\/www\.hnmiaosu\.cc\/*,requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Huxiaoka/Script/master/ttdkzz.js
 
 
 圈x:本地
-https:\/\/www\.hnmiaosu\.cc\/* url script-request-header https://raw.githubusercontent.com/Huxiaoka/Script/master/ttdkzzk.js
+https:\/\/www\.hnmiaosu\.cc\/* url script-request-header https://raw.githubusercontent.com/Huxiaoka/Script/master/ttdkzz.js
 
 # 天天打卡赚赚小程序
-http-request ^https:\/\/www\.hnmiaosu\.cc\/* script-path= https://raw.githubusercontent.com/Huxiaoka/Script/master/ttdkzzk.js, requires-body=true, timeout=10, tag=天天打卡赚赚小程序
+http-request ^https:\/\/www\.hnmiaosu\.cc\/* script-path= https://raw.githubusercontent.com/Huxiaoka/Script/master/ttdkzz.js, requires-body=true, timeout=10, tag=天天打卡赚赚小程序
 
 # 天天打卡赚赚小程序
-cron "0 0 * * * *" script-path= https://raw.githubusercontent.com/Huxiaoka/Script/master/ttdkzzk.js, tag=天天打卡赚赚小程序
+cron "0 0 * * * *" script-path= https://raw.githubusercontent.com/Huxiaoka/Script/master/ttdkzz.js, tag=天天打卡赚赚小程序
 
 
 
@@ -65,7 +65,7 @@ const cs = 9;//小程序打卡次数
 const xj = 1;//提现标准
 var tz=''
 
-const dkurlkey = 'ttdkzzkurl'+jbid
+const dkurlkey = 'ttdkzzurl'+jbid
 const dkurl = sy.getdata(dkurlkey)
 
 
